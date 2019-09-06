@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 li{
     text-decoration: none;
 }
+footer{
+    background-color: black;
+    margin: 0;
+}
 nav .navbar-expand{
     background: #eee;
     box-shadow: 1px 2px 2px 1px rgba(12, 12, 12, 0.11);
@@ -55,6 +59,77 @@ nav .navbar-expand{
     background-color: #090e45;
     color: #fff;
 }
+#intro{
+    background: url('../img/background.jpg') no-repeat right;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 800px;
+    height: auto;
+}
+.img_caption{
+    background-color: rgba(255, 255, 255, 0.6);
+    bottom: 0;
+    height: 19%;
+    left: 0;
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    z-index: 99;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -moz-transform: translateY(150%) scale(1.5);
+    -o-transform: translateY(150%) scale(1.5);
+    -ms-transform: translateY(150%) scale(1.5);
+    -webkit-transform: translateY(150%) scale(1.5);
+    transform: translateY(150%) scale(1.5);
+}
+footer a{
+    color: #FFF;
+    font-style: inherit;
+}
+footer li{
+    list-style: none;
+}
+hr{
+    background-color: #FFF;
+}
+
+.right-content, .left-content {
+	float:left;
+	display:block;
+	width:40%;
+	padding:1% 2%;
+}
+.left-content {
+	border-right:5px dotted #666;	
+	text-align:right;
+}
+.left-content p {
+	margin:150px 0 0;
+}
+.right-content p {
+	margin:80px 0 150px;
+}
+.left-content p, .right-content p {
+-webkit-transition: all 0.7s ease-in-out;
+-moz-transition: all 0.7 ease-in-out;
+-ms-transition: all 0.7s ease-in-out;
+-o-transition: all 0.7s ease-in-out;
+transition: all 0.7s ease-in-out;	
+}
+.left-content .more-padding {
+  padding-right:100px;
+}
+.right-content .more-padding {
+  padding-left:100px;
+}
 .nav-link{
     color: #fff;
     letter-spacing: 1px;
@@ -83,20 +158,6 @@ h3.tittle span {
     line-height: .5;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3)
 }
-footer{
-    background-color: black;
-    margin: 0;
-}
-footer a{
-    color: #FFF;
-    font-style: inherit;
-}
-footer li{
-    list-style: none;
-}
-hr{
-    background-color: #FFF;
-}
 #toTop {
     display: none;
     text-decoration: none;
@@ -124,96 +185,37 @@ hr{
 }
 
 
-
 /* Media queries */
 
 @media(min-width: 1280px){
-    #intro{
-        background: url('../img/background.jpg') no-repeat right;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        -ms-background-size: cover;
-        min-height: 800px;
-        height: auto;
-    }
-    #documents p{
-        font-size: 20px;
-    }
-    .doc_image{
-        height: 55px;
-    }
-    .team_image{
-        height: 175px;
+    .navbar-brand{
+        font-size: 30px;
     }
     .image_caption{
         padding-top: 13em;
     }
+    .team-agile-img{
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+    }
 }
 @media(min-width: 992px) and (max-width: 1280px){
-    
+    .team-agile-img{
+        height: 125px;
+        width: 125px;
+        border: 1px solid black;
+    }
 }
 @media(min-width: 768px) and (max-width: 992px){
-    
+    .team-agile-img{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
 }
 @media(min-width: 576px) and (max-width: 768px){
-    
-}
-@media(max-width: 576px){
-    #logo{
-        height: 35px;
-    }
-    .navbar-toggler{
-        height: 40px;
-        width: 40px;
-    }
-    .navbar-toggler-icon{
-        height: 30px;
-        width: 30px;
-        margin-left: -8px;
-    }
-    #intro{
-        background: url('../img/background.jpg') no-repeat right;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        -ms-background-size: cover;
-        min-height: 400px;
-        height: auto;
-    }
-    .tittle{
-        font-size: 20px;
-    }
-    .doc_image{
-        height: 35px;
-    }
-    #documents p{
-        font-size: 13px;
-    }
-    .team_image{
-        height: 70px;
-    }
-    footer h3{
-        font-size: 17px;
-    }
-    footer div{
-        font-size: 12px;
-    }
-    footer ul{
-        margin-left: -30px;
-    }
-    #contact .mb-3{
-        font-size: 15px;
-    }
-    #contact label{
-        font-size: 15px;
-    }
-    .image_caption{
-        padding-top: 5em;
-        font-size: 15px;
-    }
+
 }
 
 /*****************/
