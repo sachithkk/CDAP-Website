@@ -1,12 +1,5 @@
 $(document).ready(function () {
-    /*
-        var defaults = {
-        containerID: 'toTop', // fading element id
-        containerHoverID: 'toTopHover', // fading element hover id
-        scrollSpeed: 1200,
-        easingType: 'linear' 
-        };
-    */
+    
     $().UItoTop({
         easingType: 'easeOutQuart'
     });
@@ -27,4 +20,12 @@ addEventListener("load", function () {
 
 function hideURLbar() {
     window.scrollTo(0, 1);
+}
+
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(6.914717, 79.972926),
+        zoom: 15,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
