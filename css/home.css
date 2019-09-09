@@ -409,7 +409,6 @@ hr{
 
 
 
-/* Media queries */
 
 @media(min-width: 1280px){
     #intro{
@@ -463,7 +462,7 @@ hr{
     
 }
 @media(min-width: 576px) and (max-width: 768px){
-    .main-timeline .timeline{ margin-top: -19px;
+    .main-timeline .timeline{ margin-top: -19px;}
 }
 @media(max-width: 576px){
     #logo{
@@ -546,5 +545,3 @@ hr{
         right: 9%;
     }
 }
-
-/******************/
