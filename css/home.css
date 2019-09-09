@@ -124,6 +124,7 @@ hr{
 }
 .team-agile-img {
     background-color: #FFF;
+    height: 275px;
     display: block;
     overflow: hidden;
     position: relative;
@@ -168,6 +169,31 @@ hr{
     transform: translateY(0%) scale(1);
     font-size: 10px;
 }
+.view-caption {
+    background-color: rgba(255, 255, 255, 0.6);
+    bottom: 0;
+    height: 19%;
+    left: 0;
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    z-index: 99;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -moz-transform: translateY(150%) scale(1.5);
+    -o-transform: translateY(150%) scale(1.5);
+    -ms-transform: translateY(150%) scale(1.5);
+    -webkit-transform: translateY(150%) scale(1.5);
+    transform: translateY(150%) scale(1.5);
+}
+.img-fluid{
+  height: 275px;
+}
+
 
 
 
@@ -450,6 +476,17 @@ hr{
     }
     #milestones{
         padding-bottom: 50px;   
+    }
+
+    .view-caption .cap-info h4 {
+        color: #000;
+        font-size: 1.7em;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    .team_text{
+      font-size: 1.2em;
+      font-weight: bold;
     }
 
     .main-timeline .timeline:after{ border-radius: 88px 0 0 88px; }
