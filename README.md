@@ -1,2 +1,2 @@
 # CDAP-Website
-This is for the CDAP website about our project
+This is for the CDAP website of our project
