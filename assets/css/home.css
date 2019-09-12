@@ -509,6 +509,12 @@ hr{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.table1 {
+  border-radius: 5px;
+  width: 50%;
+  margin: 0px auto;
+  float: none;
+}
 
 .img-fluid{
   height: 275px;
