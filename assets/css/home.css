@@ -4,6 +4,10 @@ body {
     background: #FFF;
     font-family: 'Dosis', sans-serif;
 }
+.camera_wrap {
+  width: 100%;
+  height: 100%;
+}
 body a {
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -11,6 +15,9 @@ body a {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
     text-decoration: none;
+}
+.bg-light {
+  background-color: rgba(0, 0, 0, 0.28) !important;
 }
 body a:hover {
     text-decoration: none;
@@ -26,10 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 li{
     text-decoration: none;
 }
-.camera_wrap {
-  width: 100%;
-  height: 100%;
-}
+
 
 .txt {
   font-size: 30px;
@@ -64,9 +68,7 @@ nav .navbar-expand{
 .navbar-brand span{
     color: #8BC34A;
 }
-.bg-light {
-    background-color: rgba(0, 0, 0, 0.28) !important;
-}
+
 .nav-item .active {
     background-color: #0116f8;
     color: #fff;
@@ -125,7 +127,7 @@ hr{
     height: 32px;
     border: none;
     text-indent: 100%;
-    background: url(../img/move-top.png) no-repeat 0px 0px;
+    background: url(../images/move-top.png) no-repeat 0px 0px;
 }
 
 #toTopHover {
@@ -381,6 +383,7 @@ hr{
 
 
 @media(min-width: 1280px){
+  
     #intro{
         /* background: url('../img/background.jpg') no-repeat right; */
         
@@ -391,7 +394,7 @@ hr{
         -ms-background-size: cover; */
         min-height: 680px;
         height: auto;
-        margin-top: -5px;
+        margin-top: 0px;
         height: 100%;  
         width: 100%;
       /* display: flex;
@@ -402,6 +405,7 @@ hr{
     #documents p{
         font-size: 20px;
     }
+    
     .doc_image{
         height: 55px;
     }
@@ -519,6 +523,39 @@ hr{
 .img-fluid{
   height: 275px;
 }
+.build_price{
+  height: 325px;
+  padding: 25px 25px 25px 25px;
+  color: white;
+  font-size: 30px;
+}
+.build_price label{
+  margin-top: 100px;
+}
+.build_price p{
+  margin-top: 75px;
+  font-size: 20px;
+}
+.pc_img{
+  height: 250px;
+  width: 300px;
+  margin-top: 15px;
+}
+.build_game{
+  height: 325px;
+  padding: 25px 25px 25px 25px;
+  font-size: 30px;
+}
+.build_game label{
+  margin-top: 75px;
+}
+.build_game p{
+  margin-top: 75px;
+  font-size: 20px;
+}
+#about table button{
+  margin-top: 5px;
+}
 
     .main-timeline .timeline:after{ border-radius: 88px 0 0 88px; }
     .main-timeline .timeline:nth-child(even):after{ border-radius: 0 88px 88px 0; }
@@ -526,13 +563,11 @@ hr{
 @media(min-width: 992px) and (max-width: 1280px){
   #intro{
     /* background: url('../img/background.jpg') no-repeat right; */
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    min-height: 600px;
-    height: auto;
+    min-height: 550px;
+        height: auto;
+        margin-top: 0px;
+        height: 100%;  
+        width: 100%;
   }
   #documents p{
     font-size: 16px;
@@ -643,6 +678,34 @@ hr{
 
   .img-fluid{
     height: 200px;
+  }
+  .pc_img{
+    height: 175px;
+    width: 200px;
+    margin-top: 40px;
+  }
+  .build_price{
+    height: 275px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+  }
+  .build_price label{
+    margin-top: 80px;
+  }
+  .build_price p{
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .build_game{
+    height: 275px;
+    padding: 10px 10px 10px 10px;
+  }
+  .build_game label{
+    margin-top: 80px;
+  }
+  .build_game p{
+    margin-top: 30px;
+    font-size: 18px;
   }
 }
 @media(min-width: 768px) and (max-width: 992px){
@@ -790,8 +853,39 @@ hr{
   .img-fluid{
     height: 175px;
   }
+  .pc_img{
+    height: 150px;
+    width: 175px;
+    margin-top: 50px;
+  }
+  .build_price{
+    height: 275px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+  }
+  .build_price label{
+    margin-top: 70px;
+  }
+  .build_price p{
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .build_game{
+    height: 275px;
+    padding: 10px 10px 10px 10px;
+  }
+  .build_game label{
+    margin-top: 70px;
+  }
+  .build_game p{
+    margin-top: 30px;
+    font-size: 15px;
+  }
 }
 @media(min-width: 576px) and (max-width: 768px){
+  .bg-light {
+    background-color: #343a40 !important;
+  }
   #intro{
     /* background: url('../img/background.jpg') no-repeat right; */
     background-size: cover;
@@ -799,7 +893,7 @@ hr{
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 500px;
+    min-height: 400px;
     height: auto;
   }
   body{
@@ -936,8 +1030,39 @@ hr{
   .img-fluid{
     height: 175px;
   }
+  .pc_img{
+    height: 150px;
+    width: 175px;
+    margin-top: 50px;
+  }
+  .build_price{
+    height: 275px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+  }
+  .build_price label{
+    margin-top: 70px;
+  }
+  .build_price p{
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .build_game{
+    height: 275px;
+    padding: 10px 10px 10px 10px;
+  }
+  .build_game label{
+    margin-top: 70px;
+  }
+  .build_game p{
+    margin-top: 30px;
+    font-size: 15px;
+  }
 }
 @media(max-width: 576px){
+    .bg-light {
+      background-color: #343a40 !important;
+    }
     body{
       font-size: 14px;
     }
@@ -954,14 +1079,11 @@ hr{
         margin-left: -8px;
     }
     #intro{
-        /* background: url('../img/background.jpg') no-repeat right; */
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        -ms-background-size: cover;
-        min-height: 400px;
+        min-height: 250px;
         height: auto;
+        margin-top: 0px;
+        height: 100%;  
+        width: 100%;
     }
     #intro h3{
       font-size: 19px;
@@ -1042,7 +1164,40 @@ hr{
       font-weight: bold;
       margin-top: 5px;
     }
-
-   
+    .pc_img{
+      height: 75px;
+      width: 100px;
+      margin-top: 50px;
+    }
+    .add{
+      font-size: 10px;
+    }
+    .build_price{
+      height: 250px;
+      padding: 5px 5px 5px 5px;
+      color: white;
+    }
+    .build_price label{
+      margin-top: 70px;
+    }
+    .build_price p{
+      margin-top: 20px;
+      font-size: 12px;
+    }
+    .build_game{
+      height: 250px;
+      padding: 5px 5px 5px 5px;
+    }
+    .build_game label{
+      margin-top: 70px;
+    }
+    .build_game p{
+      margin-top: 20px;
+      font-size: 12px;
+    }
+    #about table button{
+      font-size: 15px;
+      margin-top: 3px;
+    }
 }
 
