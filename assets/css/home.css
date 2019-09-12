@@ -384,20 +384,20 @@ hr{
     #intro{
         /* background: url('../img/background.jpg') no-repeat right; */
         
-        background-size: cover;
+        /* background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        -ms-background-size: cover;
-        min-height: 800px;
+        -ms-background-size: cover; */
+        min-height: 700px;
         height: auto;
 
         height: 100%;  
         width: 100%;
-      display: flex;
+      /* display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: center; */
     }
     #documents p{
         font-size: 20px;
