@@ -36,15 +36,11 @@ $(window).load(function() {
 });
 
 function sendMail() {
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "virajlkgunathilaka96@gmail.com",
-        Password : "c28d7ca0-0171-495e-bfb3-d1f0a213b0cd",
-        To : 'virajlakshitha39@gmail.com',
-        From : "virajlkgunathilaka96@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
+    var email = document.getElementById('email').value;
+    var msg = document.getElementById('msg').value;
+    if(msg != ""){
+        window.open("mailto:virajlakshitha39@gmail.com?Subject="+msg);
+    }
+    
 }
+
