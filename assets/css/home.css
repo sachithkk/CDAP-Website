@@ -4,6 +4,21 @@ body {
     background: #FFF;
     font-family: 'Dosis', sans-serif;
 }
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../images/logo.png') center no-repeat #fff;
+}
+.qq{
+  color: white;
+  z-index: 5;
+}
 .camera_wrap {
   width: 100%;
   height: 100%;
@@ -37,14 +52,16 @@ li{
 
 .txt {
   font-size: 30px;
-  color: #1a81db
+}
+.txt img{
+  height: 60px;
 }
 .txt1 {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: bold;
   margin-top: 20px;
   margin-left: 20px;
-  color: red;
+  color: white;
 }
 nav .navbar-expand{
     background: #eee;
@@ -127,7 +144,7 @@ hr{
     height: 32px;
     border: none;
     text-indent: 100%;
-    background: url(../images/move-top.png) no-repeat 0px 0px;
+    background: url(../images/up.png) no-repeat 0px 0px;
 }
 
 #toTopHover {
@@ -378,10 +395,6 @@ hr{
   .main-timeline .timeline:nth-child(5n+5) .title {
     color: #0071BD;
   }
-.sys_arch{
-  width: 100%;
-  height: 425px;
-}
 
 
 
@@ -408,7 +421,10 @@ hr{
     #documents p{
         font-size: 20px;
     }
-    
+    .sys_arch{
+      width: 100%;
+      height: 425px;
+    }
     .doc_image{
         height: 55px;
     }
@@ -447,14 +463,14 @@ hr{
       font-size: 1.2em;
       font-weight: bold;
     }
-    .team-agile-img:hover .view-caption {
+    /* .team-agile-img:hover .view-caption {
       -moz-transform: translateY(0%) scale(1);
       -o-transform: translateY(0%) scale(1);
       -ms-transform: translateY(0%) scale(1);
       -webkit-transform: translateY(0%) scale(1);
       transform: translateY(0%) scale(1);
       font-size: 10px;
-  }
+  } */
   .view-caption {
       background-color: rgba(255, 255, 255, 0.6);
       bottom: 0;
@@ -512,9 +528,9 @@ hr{
     transition: all 0.5s;
 }
 
-.team-agile-img:hover:before {
+/* .team-agile-img:hover:before {
     background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 .table1 {
   border-radius: 5px;
@@ -579,6 +595,10 @@ hr{
   #documents p{
     font-size: 16px;
   }
+  .sys_arch{
+    width: 100%;
+    height: 375px;
+  }
   .tittle{
     font-size: 25px;
   }
@@ -586,7 +606,7 @@ hr{
     font-size: 22px;
   }
   .doc_image{
-    height: 40px;
+    height: 35px;
   }
   footer h3{
     font-size: 22px;
@@ -598,7 +618,7 @@ hr{
     padding-top: 13em;
     font-size: 15px;
   }
-  #team div .add{
+  .add{
     font-size: 15px;
   }
   #googleMap{
@@ -614,14 +634,14 @@ hr{
     font-weight: bold;
     margin-top: 5px;
   }
-  .team-agile-img:hover .view-caption {
+  /* .team-agile-img:hover .view-caption {
     -moz-transform: translateY(0%) scale(1);
     -o-transform: translateY(0%) scale(1);
     -ms-transform: translateY(0%) scale(1);
     -webkit-transform: translateY(0%) scale(1);
     transform: translateY(0%) scale(1);
     font-size: 10px;
-  }
+  } */
   .view-caption {
       background-color: rgba(255, 255, 255, 0.6);
       bottom: 0;
@@ -679,9 +699,9 @@ hr{
     transition: all 0.5s;
   }
 
-  .team-agile-img:hover:before {
+  /* .team-agile-img:hover:before {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+  } */
 
   .img-fluid{
     height: 200px;
@@ -770,7 +790,7 @@ hr{
   #team div{
     font-size: 15px;
   }
-  #team div .add{
+  .add{
     font-size: 12px;
   }
   #about div{
@@ -779,7 +799,7 @@ hr{
   #about h4{
     font-size: 20px;
   }
-  #about img{
+  #about .about_img{
     height: 45px;
   }
   .tittle{
@@ -788,14 +808,14 @@ hr{
   #googleMap{
       height: 300px;
   }
-  .team-agile-img:hover .view-caption {
+  /* .team-agile-img:hover .view-caption {
     -moz-transform: translateY(0%) scale(1);
     -o-transform: translateY(0%) scale(1);
     -ms-transform: translateY(0%) scale(1);
     -webkit-transform: translateY(0%) scale(1);
     transform: translateY(0%) scale(1);
     font-size: 10px;
-  }
+  } */
   .view-caption {
       background-color: rgba(255, 255, 255, 0.6);
       bottom: 0;
@@ -853,9 +873,9 @@ hr{
     transition: all 0.5s;
   }
 
-  .team-agile-img:hover:before {
+  /* .team-agile-img:hover:before {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+  } */
 
   .img-fluid{
     height: 175px;
@@ -889,12 +909,28 @@ hr{
     font-size: 15px;
   }
   .sys_arch{
-    width: 100%;
     height: 300px;
+    width: 100%;
+  }
+  .bg-light {
+    background-color: #343a40 !important;
   }
 }
 @media(min-width: 576px) and (max-width: 768px){
-  
+  .txt img{
+    height: 40px;
+  }
+  .txt1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 5px;
+    color: white;
+  }
+  .sys_arch{
+    width: 100%;
+    height: 250px;
+  }
   .bg-light {
     background-color: #343a40 !important;
   }
@@ -952,7 +988,7 @@ hr{
   #team div{
     font-size: 15px;
   }
-  #team div .add{
+  .add{
     font-size: 12px;
   }
   #about div{
@@ -961,7 +997,7 @@ hr{
   #about h4{
     font-size: 20px;
   }
-  #about img{
+  #about .about_img{
     height: 45px;
   }
   .tittle{
@@ -970,14 +1006,14 @@ hr{
   #googleMap{
       height: 300px;
   }
-  .team-agile-img:hover .view-caption {
+  /* .team-agile-img:hover .view-caption {
     -moz-transform: translateY(0%) scale(1);
     -o-transform: translateY(0%) scale(1);
     -ms-transform: translateY(0%) scale(1);
     -webkit-transform: translateY(0%) scale(1);
     transform: translateY(0%) scale(1);
     font-size: 10px;
-  }
+  } */
   .view-caption {
       background-color: rgba(255, 255, 255, 0.6);
       bottom: 0;
@@ -1035,9 +1071,9 @@ hr{
     transition: all 0.5s;
   }
 
-  .team-agile-img:hover:before {
+  /* .team-agile-img:hover:before {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+  } */
 
   .img-fluid{
     height: 175px;
@@ -1106,7 +1142,7 @@ hr{
     .doc_image{
         height: 35px;
     }
-    #about div img{
+    #about div .about_img{
       height: 35px;
     }
     #about h4{
@@ -1213,6 +1249,13 @@ hr{
     }
     .doc_mem{
       font-size: 12px;
+    }
+    .ad{
+      font-size: 8px;
+    }
+    .sys_arch{
+      width: 100%;
+      height: 150px;
     }
 }
 

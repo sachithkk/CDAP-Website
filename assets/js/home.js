@@ -29,3 +29,22 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+$(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+});
+
+function sendMail() {
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "virajlkgunathilaka96@gmail.com",
+        Password : "c28d7ca0-0171-495e-bfb3-d1f0a213b0cd",
+        To : 'virajlakshitha39@gmail.com',
+        From : "virajlkgunathilaka96@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
