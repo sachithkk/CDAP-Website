@@ -453,7 +453,7 @@ hr{
     }
     #documents{
         padding-bottom: 50px;
-        background: url('../images/back.jpg') no-repeat;
+        color: white;
         height: 100%;
         background-size: cover;
     }
@@ -563,7 +563,7 @@ hr{
   height: 325px;
   padding: 25px 25px 25px 25px;
   font-size: 30px;
-  background: url('../images/bb.jpg') no-repeat;
+  color: white;
   height: 100%;
   background-size: cover;
 }
